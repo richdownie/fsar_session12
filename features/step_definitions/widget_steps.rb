@@ -3,7 +3,8 @@ Given /I am on the fsar widgets page/ do
 end
 
 Given(/^I am on the new widget page$/) do
-  @widget_new.visit(@fsar_api_key)
+  @browser.get(@domain + "/widgets/new?fsar_api_key=#{@fsar_api_key}")
+  # @widget_new.visit(@fsar_api_key)
 end
 
 Given /I create a new widget/i do

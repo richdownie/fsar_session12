@@ -6,7 +6,6 @@ class WidgetNew
   end
 
   def visit(key)
-    raise "Please add your fsar api key to the features/support/env.rb file" unless key != "replace_with_your_fsar_api_key"
     @browser.get(@domain + "/widgets/new?fsar_api_key=#{key}")
   end
 
