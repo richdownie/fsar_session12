@@ -4,6 +4,9 @@ end
 
 Given(/^I am on the new widget page$/) do
   @browser.get(@domain + "/widgets/new?fsar_api_key=#{@fsar_api_key}")
+  #
+  # Enable the below PageObject methods step if you want to remove the above explicit step
+  #
   # @widget_new.visit(@fsar_api_key)
 end
 
